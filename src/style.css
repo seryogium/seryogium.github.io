@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* background: rgba(0, 0, 0, 0) linear-gradient(rgb(115, 195, 212), rgb(107, 157, 211), rgb(92, 119, 208), rgb(69, 82, 206), rgb(17, 42, 202)) repeat scroll 0% 0%; */
+    background: rgba(0, 0, 0, 0) linear-gradient(rgb(57, 53, 251), rgb(57, 40, 212), rgb(55, 27, 175), rgb(51, 14, 138), rgb(45, 2, 104)) repeat scroll 0% 0%;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    color: rgb(80,192,229);
+    font-weight: 200;
+}
+.location-section,
+.temperature-section,
+.full-location {
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperature-section{
+    flex-direction: column;
+}
+
+.temperature-degree-section{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+
+.temperature-degree-section span{
+    margin: 10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.temperature-degree-section h2{
+    font-size: 40px;
+}
+
+.temperature-description {
+  font-weight: normal;
+  font-size: 24px;
+}
