@@ -25,7 +25,7 @@ window.addEventListener('load', () => {
                 .then(data => {
                     console.log(data);
                     locationTimezone.textContent = data.results[0].components.city;
-                    fullLocation.textContent = data.results[0].formatted.split(',').slice(1,3);
+                    fullLocation.textContent = data.results[0].formatted.split(',').slice(3,5);
                 });
             fetch(weatherApi)
                 .then(response => {
